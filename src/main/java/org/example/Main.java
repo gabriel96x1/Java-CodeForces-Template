@@ -8,25 +8,21 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        int n = rInt();
+        Scanner in = new Scanner(System.in) ;
+        int n = rint(in);
         function(n);
+        in.close();
     }
 
     public static void function(int n) {
         System.out.println(n);
     }
-
-    public static int rInt() {
-        Scanner in = new Scanner(System.in) ;
-        int i = in.nextInt();
-        in.close();
-        return i;
+    
+    public static int rint(Scanner in) {
+        return in.nextInt();
     }
 
-    public static String rStr() {
-        Scanner in = new Scanner(System.in) ;
-        String s = in.next();
-        in.close();
-        return s;
+    public static String rstr(Scanner in) {
+        return in.next();
     }
 }
